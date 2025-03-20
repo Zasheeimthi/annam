@@ -75,12 +75,40 @@ Table of contents
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&amp;family=Righteous&amp;display=swap');
 
 
+@font-face {
+  font-family: "KumbhSans-Regular";
+  src: url('fonts/KumbhSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "KumbhSans-Medium";
+  src: url('fonts/KumbhSans-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "KumbhSans-Bold";
+  src: url('fonts/KumbhSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "KumbhSans-ExtraBold";
+  src: url('fonts/KumbhSans-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "KumbhSans-Black";
+  src: url('fonts/KumbhSans-Black.ttf') format("truetype");
+}
+
+
+
+
 /*====================
 2. Theme variables
 ======================*/
 
 :root {
-  --body-font: "Righteous", serif;
+  --body-font: "KumbhSans-Bold", serif;
   --heading-font: "Fleur De Leah", serif;
   --theme-color: #F56421;
   --theme-color2: #00A650;
@@ -108,6 +136,13 @@ Table of contents
   --footer-text-color: #F5FAFF;
 }
 
+h1.hero-title {
+  font-family: "KumbhSans-Black";
+}
+
+h2.site-title{
+  font-family: "KumbhSans-ExtraBold";
+}
 
 
 /*====================
@@ -5779,7 +5814,7 @@ label {
   position: absolute;
   right: -15px;
   bottom: 100px;
-  font-size: 145px;
+  font-size: 125px;
   writing-mode: vertical-lr;
   color: var(--theme-bg-light);
 }
