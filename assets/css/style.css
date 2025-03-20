@@ -104,7 +104,7 @@ Table of contents
   --border-info-color2: rgba(0, 0, 0, 0.05);
   --border-white-color: rgba(255, 255, 255, 0.15);
   --border-white-color2: rgba(255, 255, 255, 0.3);
-  --footer-bg: #141414;
+  --footer-bg: #00A650;
   --footer-text-color: #F5FAFF;
 }
 
@@ -5902,6 +5902,10 @@ label {
     width: 100%;
     opacity: .08;
   }
+}
+
+.about-nav li.nav-item a.nav-link{
+ color: #fff;
 }
 
 /* ================= end ================== */
