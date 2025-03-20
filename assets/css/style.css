@@ -100,6 +100,11 @@ Table of contents
   src: url('fonts/KumbhSans-Black.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: "Righteous-Regular";
+  src: url('fonts/Righteous-Regular.ttf') format("truetype");
+}
+
 
 
 
@@ -137,11 +142,11 @@ Table of contents
 }
 
 h1.hero-title {
-  font-family: "KumbhSans-Black";
+  font-family: "Righteous-Regular";
 }
 
 h2.site-title{
-  font-family: "KumbhSans-ExtraBold";
+  font-family: "Righteous-Regular";
 }
 
 
