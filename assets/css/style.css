@@ -137,7 +137,7 @@ Table of contents
   --border-info-color2: rgba(0, 0, 0, 0.05);
   --border-white-color: rgba(255, 255, 255, 0.15);
   --border-white-color2: rgba(255, 255, 255, 0.3);
-  --footer-bg: #00A650;
+  --footer-bg: #F56421;
   --footer-text-color: #F5FAFF;
 }
 
@@ -3517,6 +3517,10 @@ label {
 }
 
 @media all and (max-width: 767px) {
+  .about-nav li.nav-item a.nav-link{
+    color: #000 !important;
+  }
+
   .choose-item .count{
     top: unset;
     right: unset;
@@ -5462,7 +5466,7 @@ label {
 }
 
 .copyright .copyright-text a {
-  color: var(--theme-color);
+  color: var(--color-white);
   font-weight: 500;
 }
 
