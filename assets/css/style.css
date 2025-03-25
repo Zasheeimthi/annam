@@ -1057,7 +1057,7 @@ label {
 }
 
 .header-top-list a:hover{
-  color: var(--theme-color)
+  color: var(--theme-color2)
 }
 
 .header-top-list a i{
