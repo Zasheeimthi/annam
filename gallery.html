@@ -23,7 +23,83 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <style>
+        /* Gallery Styles */
+        .gallery-section {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #d35400;
+            margin-bottom: 10px;
+          
+        }
+        
+        .section-subtitle {
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .img-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .food-name {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .food-desc {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
 </head>
 
 <body class="home-4">
@@ -301,144 +377,616 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="row popup-gallery wow fadeInUp" data-wow-delay=".25s">
-                    <div class="col-md-4">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/gallery/21.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/gallery/21.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/gallery/22.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/gallery/22.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/gallery/23.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/gallery/23.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/gallery/24.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/gallery/24.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/gallery/25.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/gallery/25.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/gallery/26.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/gallery/26.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-12">
-                        <div class="gallery-btn text-center mt-30">
-                            <a href="#" class="theme-btn"><span class="fas fa-rotate-right"></span>Load More</a>
-                        </div>
-                    </div> -->
-                </div>
-
-                <div class="row popup-gallery wow fadeInUp" data-wow-delay=".25s">
-                    <div class="col-md-4">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/event/31.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/event/31.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/event/33.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/event/33.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/event/32.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/event/32.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/event/35.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/event/35.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/event/34.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/event/34.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img src="assets/img/event/36.jpg" alt="">
-                            </div>
-                            <div class="gallery-content">
-                                <a class="popup-img gallery-link" href="assets/img/event/36.jpg"><i
-                                        class="fal fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-12">
-                        <div class="gallery-btn text-center mt-30">
-                            <a href="#" class="theme-btn"><span class="fas fa-rotate-right"></span>Load More</a>
-                        </div>
-                    </div> -->
-                </div>
+                
+               
             </div>
         </div>
         <!-- gallery-area end -->
+
+        <section class="gallery-section">
+            <h2 class="section-title">Our Culinary Creations</h2>
+            <p class="section-subtitle">Experience the authentic flavors of South India</p>
+            
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/21.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/22.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/23.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/24.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/25.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/26.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/event/31.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/event/32.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/event/33.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/event/34.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/event/35.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/event/36.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/31.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/32.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/33.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/34.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/35.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/36.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+           
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/37.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/38.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/39.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/40.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/41.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/42.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/43.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/44.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/45.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/46.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/47.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/48.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/49.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/50.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/51.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/52.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/53.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/54.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/55.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/56.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/57.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/58.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/59.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/60.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/61.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/62.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/63.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/64.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/65.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/66.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/67.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/68.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/69.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/70.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/71.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/72.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/73.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/74.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/75.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/76.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 5 - Filter Coffee -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/77.jpg" alt="Filter Coffee" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Filter Coffee</h3>
+                        <p class="food-desc">Traditional South Indian decoction coffee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 6 - Pongal -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/78.jpg" alt="Ven Pongal" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ven Pongal</h3>
+                        <p class="food-desc">Comforting rice-lentil porridge with ghee</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Item 1 - Ghee Roast Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/79.jpg" alt="Ghee Roast Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Ghee Roast Dosa</h3>
+                        <p class="food-desc">Crispy golden crepe lavished with aromatic ghee</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 2 - Masala Dosa -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/80.jpg" alt="Masala Dosa" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Masala Dosa</h3>
+                        <p class="food-desc">Classic dosa stuffed with spiced potato filling</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 3 - Idli Sambar -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/81.jpg" alt="Idli Sambar" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Idli Sambar</h3>
+                        <p class="food-desc">Soft steamed rice cakes with lentil stew</p> -->
+                    </div>
+                </div>
+                
+                <!-- Item 4 - Vada -->
+                <div class="gallery-item">
+                    <img src="./assets/img/gallery/82.jpg" alt="Medu Vada" class="gallery-img">
+                    <div class="img-caption">
+                        <!-- <h3 class="food-name">Medu Vada</h3>
+                        <p class="food-desc">Crispy fried lentil donuts with coconut chutney</p> -->
+                    </div>
+                </div>
+                
+               
+            </div>
+        </section>
 
     </main>
 

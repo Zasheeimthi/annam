@@ -2578,6 +2578,10 @@ label {
 
 .menu-area{
   background: var(--color-white);
+  background-image: url(/annam/assets/img/breadcrumb/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 
 .menu-item{
