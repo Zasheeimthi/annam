@@ -2578,7 +2578,7 @@ label {
 
 .menu-area{
   /* background: var(--color-white); */
-  background-image: url('/annam/assets/img/breadcrumb/3.png');
+  background-image: url(/annam/assets/img/breadcrumb/3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
